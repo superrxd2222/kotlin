@@ -38,8 +38,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.marvels.ui.theme.Green41
-import com.example.marvels.ui.theme.White01
+import com.example.marvels.ui.theme.PurpleGrey40
+import com.example.marvels.ui.theme.Purple40
 
 class DashboardDesign : ComponentActivity() {
 
@@ -63,7 +63,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
         modifier = Modifier
             .padding(innerPadding)
             .fillMaxSize()
-            .background(Green41),
+            .background(PurpleGrey40),
     ) {
 
         // Top row ko Picture ko laagi
@@ -78,7 +78,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
             Button(onClick = { /* Profile Click */
             },
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Green41
+                    containerColor = Purple40
                 )
             )
             {
@@ -171,7 +171,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
                 Card(
                     modifier = Modifier.height(160.dp).weight(1f),
                     colors = CardDefaults.cardColors(
-                        containerColor = White01
+                        containerColor = Color.White
                     )
                 ) {
                     Column (
@@ -217,7 +217,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
                     ){
                         Image(
                             // Image ko namm rakhda jaile lower case ma hunu parxa
-                            painter = painterResource(R.drawable.character),
+                            painter = painterResource(R.drawable.boy),
 
                             contentDescription = null, contentScale = ContentScale.Crop,
                             modifier = Modifier
@@ -245,7 +245,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
                 Card(
                     modifier = Modifier.height(160.dp).weight(1f),
                     colors = CardDefaults.cardColors(
-                        containerColor = White01
+                        containerColor = Color.White
                     )
                 ) {
                     Column (
@@ -321,7 +321,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
                 Card(
                     modifier = Modifier.height(160.dp).weight(1f),
                     colors = CardDefaults.cardColors(
-                        containerColor = White01
+                        containerColor = Color.White
                     )
                 ) {
                     Column (
@@ -330,7 +330,7 @@ fun DesignHeader(innerPadding: PaddingValues) {
                     ){
                         Image(
                             // Image ko namm rakhda jaile lower case ma hunu parxa
-                            painter = painterResource(R.drawable.logistic),
+                            painter = painterResource(R.drawable.logistics),
 
                             contentDescription = null, contentScale = ContentScale.Crop,
                             modifier = Modifier
